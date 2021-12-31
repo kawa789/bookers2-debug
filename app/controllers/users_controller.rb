@@ -33,7 +33,7 @@ class UsersController < ApplicationController
 
   def followers
     @user = User.find(params[:id])
-    @users = @user.followings.all
+    @users = @user.followers.all
   end
 
   private
