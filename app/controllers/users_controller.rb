@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    #@user = User.find(params[:user_id])#
+    #@user = User.find(params[:user_id])
     @users = User.all
     @book = Book.new
   end
