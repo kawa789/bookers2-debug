@@ -14,7 +14,7 @@ def create
 end
 
 def destroy
-  #BookComment.find_by(id: params[:id]).destroy
+  #BookComment.find_by(id: params[:id]).destroy#
   @book = Book.find(params[:book_id])
   book_comment = @book.book_comments.find(params[:id])
   book_comment.destroy
